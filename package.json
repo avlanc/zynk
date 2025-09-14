@@ -4,7 +4,9 @@
   "description": "An open-source multipurpose discord bot with customizability. Made with Typescript and Discord.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "deploy": "ts-node src/utils/deploy-commands.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -12,7 +14,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/avlanc/zynk/issues"
   },
